@@ -1,6 +1,4 @@
-function Yaz()
-	{
-		document.write("var postTitle = new Array();
+var postTitle = new Array();
 var postUrl = new Array();
 var postPublished = new Array();
 var postDate = new Array();
@@ -187,4 +185,3 @@ function displayToc() {
         }
     }
 }
-} 
