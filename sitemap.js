@@ -173,7 +173,7 @@ function displayToc() {
             document.write("<p>");
             document.write('<a " href="' + postUrl[a] + '">' + postTitle[a] + "");
             if (postRecent[a] == true) {
-                document.write(' - <strong><span>Yeni Konu Hemen Oku!</span></strong>')
+                document.write(' - <strong><span>Yeni!</span></strong>')
             }
             document.write("</a></p>");
             a = a + 1
