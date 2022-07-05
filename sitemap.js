@@ -3,6 +3,7 @@ var postUrl = new Array();
 var postPublished = new Array();
 var postDate = new Array();
 var postLabels = new Array();
+var sortlink = new Array();
 var postRecent = new Array();
 var sortBy = "titleasc";
 var numberfeed = 0;
@@ -59,6 +60,7 @@ function bloggersitemap(a) {
     sortPosts(sortBy);
     sortlabel();
     displayToc();
+    displayTocLink();
 }
 function sortPosts(d) {
     function c(e, g) {
@@ -158,8 +160,6 @@ function sortPosts2(d, c) {
         }
     }
 }
-
-
 function displayToc() {
     var a = 0;
     var b = 0;
@@ -167,8 +167,9 @@ function displayToc() {
         temp1 = postLabels[b];
         document.write("");
         document.write('<div class="post-archive"><h4>' + temp1 + '</h4><div class="ct-columns">');
-        firsti = a;
+		firsti = a;
         do {
+			
             document.write("<p>");
             document.write('<a " href="' + postUrl[a] + '">' + postTitle[a] + "");
             if (postRecent[a] == true) {
@@ -179,9 +180,14 @@ function displayToc() {
         } while (postLabels[a] == temp1);
         b = a;
         document.write("</div></div>");
-        sortPosts2(firsti, a);
-        if (b > postTitle.length) {
+		sortPosts2(firsti, a);
+        		if (b > postTitle.length) {
             break
         }
     }
+}
+function displayTocLink() {
+    var u = 0;
+    while (sortlink == temp1);
+    document.write('<a title="Blog a sitemap modu eklemek için tıkla" href="//mandoteam.blogspot.com/2012/10/blogspot-site-map-olusturmak.html" target="_blank"><font color="#808080" size="1"><span style="text-decoration: none">Ekle</span></font></a>');
 }
