@@ -1,3 +1,4 @@
+<script type="text/javascript">
 var postTitle = new Array();
 var postUrl = new Array();
 var postPublished = new Array();
@@ -185,3 +186,4 @@ function displayToc() {
         }
     }
 }
+</script>
