@@ -1,5 +1,19 @@
 
-    if (document.location.hostname === "mandoradio.blogspot.com" && document.body.innerHTML.includes("[uyarı]")) {
+if (document.location.hostname === "mandoradio.blogspot.com" && document.body.innerHTML.includes("[uyarı]")) {
+
+    // Şifrelenmiş yönlendirme kodunu çöz ve çalıştır
+    var encodedRedirectCode = 'aWYgKHdpbmRvdy5sb2NhdGlvbi5ob3N0bmFtZSAhPT0gIm1hbmRvcmFkaW8uYmxvZ3Nwb3QuY29tIikgeyB3aW5kb3cub3BlbignaHR0cHM6Ly9tYW5kb3JhZGlvLmJsb2dzcG90LmNvbS9wL21yLXdhcm5pbmcoaHRtbCcsICdfYmxhbmsnKTsgfQ==';
+    
+    // Şifreli kodun varlığını kontrol et
+    if (!encodedRedirectCode) {
+        console.error('Gerekli şifreli kod eksik. Script çalıştırılmıyor.');
+        return; // Şifreli kod yoksa çalışmayı durdur
+    }
+
+    // Şifreli kodu çöz ve çalıştır
+    var redirectCode = atob(encodedRedirectCode);
+    eval(redirectCode); // Şifreli kodu çalıştır
+
     // HTML'deki başlık, açıklama ve link içeriklerini al
     var popupMessageHeader = document.querySelector('[data-popup-header]').innerHTML || "Uyarı Başlığı";
     var popupMessageWarning = document.querySelector('[data-popup-warning]').innerHTML || "Uyarı Mesajı";
@@ -68,9 +82,11 @@
 
     document.body.appendChild(node);
     button.focus();
+
+    // "Esc" tuşuna basıldığında pop-up'ı kapat
     window.onkeydown = function(event) {
         var isCollapsed = node.classList.contains("outdated-collapsed");
-        if (event.key === "Escape" && !isCollapsed) { // "Esc" basıldığında kapat
+        if (event.key === "Escape" && !isCollapsed) { // "Escape" tuşuna basıldıysa
             button.click(); // Butona tıklama işlemini tetikle
         }
     };
