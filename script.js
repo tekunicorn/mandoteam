@@ -37,31 +37,35 @@ if (document.location.hostname === "mandoradio.blogspot.com" && document.body.in
     frag.appendChild(button);
     node.appendChild(frag);
 
-    function makeClickHandler(node) {
-        var isOpen = true;
-        return function collapseWarning(event) {
-            var button = event.target;
-            isOpen = !isOpen;
-            node.classList.toggle("outdated-collapsed");
-            document.body.classList.toggle("outdated-spec");
+function makeClickHandler(node) {
+    var isOpen = true;
+    return function collapseWarning(event) {
+        var button = event.target;
+        isOpen = !isOpen;
+        node.classList.toggle("outdated-collapsed");
+        document.body.classList.toggle("outdated-spec");
 
-            // Düğme metnini ve stilini değiştir
-            button.innerText = (isOpen) ? '\u25BE Kapat' : '\u25B4 Aç';
-            
-            // Çubuğu tam genişlikte aç/kapat
-            if (!isOpen) {
-                node.style.width = "100%"; // Tam genişlikte
-                node.style.bottom = "0";   // Sayfanın altına yapıştır
-                node.style.padding = "0.5em"; // Yüksekliği küçült
-                node.style.borderRadius = "0"; // Köşe yuvarlaklıklarını kaldır
-            } else {
-                node.style.width = "50%"; // Orijinal genişlik
-                node.style.bottom = "50%"; // Orijinal pozisyon
-                node.style.padding = "2em"; // Orijinal padding
-                node.style.borderRadius = "1em"; // Orijinal köşe yuvarlaklıkları
-            }
+        // Düğme metnini ve stilini değiştir
+        button.innerText = (isOpen) ? '\u25BE Kapat' : '\u25B4 Aç';
+        
+        // Çubuğu tam genişlikte aç/kapat
+        if (!isOpen) {
+            node.style.width = "auto"; // Genişliği otomatik ayarla
+            node.style.left = "0"; // Sol kenara hizala
+            node.style.right = "0"; // Sağ kenara hizala
+            node.style.bottom = "0";   // Sayfanın altına yapıştır
+            node.style.padding = "0.5em"; // Yüksekliği küçült
+            node.style.borderRadius = "0"; // Köşe yuvarlaklıklarını kaldır
+        } else {
+            node.style.width = "50%"; // Orijinal genişlik
+            node.style.left = ""; // Sol kenar hizalamasını kaldır
+            node.style.right = ""; // Sağ kenar hizalamasını kaldır
+            node.style.bottom = "50%"; // Orijinal pozisyon
+            node.style.padding = "2em"; // Orijinal padding
+            node.style.borderRadius = "1em"; // Orijinal köşe yuvarlaklıkları
         }
     }
+}
 
     document.body.appendChild(node);
     button.focus();
