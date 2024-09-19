@@ -1,11 +1,6 @@
 /* Deprecation warning */
 if (document.location.hostname === "mandoradio.blogspot.com" && document.body.innerHTML.includes("[uyarı]")) {
-
-    // Şifrelenmiş yönlendirme kodunu çöz ve çalıştır
-    var encodedRedirectCode = 'aWYgKHdpbmRvdy5sb2NhdGlvbi5ob3N0bmFtZSAhPT0gIm1hbmRvcmFkaW8uYmxvZ3Nwb3QuY29tIikgeyB3aW5kb3cub3BlbignaHR0cHM6Ly9tYW5kb3JhZGlvLmJsb2dzcG90LmNvbS9wL21yLXdhcm5pbmcoaHRtbCcsICdfYmxhbmsnKTsgfQ==';
-    var redirectCode = atob(encodedRedirectCode);
-    eval(redirectCode); // Şifreli kodu çalıştır
-
+    
     // HTML'deki başlık, açıklama ve link içeriklerini al
     var popupMessageHeader = document.querySelector('[data-popup-header]').innerHTML || "Uyarı Başlığı";
     var popupMessageWarning = document.querySelector('[data-popup-warning]').innerHTML || "Uyarı Mesajı";
@@ -74,11 +69,9 @@ if (document.location.hostname === "mandoradio.blogspot.com" && document.body.in
 
     document.body.appendChild(node);
     button.focus();
-
-    // "Esc" tuşuna basıldığında pop-up'ı kapat
     window.onkeydown = function(event) {
         var isCollapsed = node.classList.contains("outdated-collapsed");
-        if (event.key === "Escape" && !isCollapsed) { // "Escape" tuşuna basıldıysa
+        if (event.key === "Escape" && !isCollapsed) { // "Esc" basıldığında kapat
             button.click(); // Butona tıklama işlemini tetikle
         }
     };
