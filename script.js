@@ -74,20 +74,6 @@ function makeClickHandler(node) {
         if (event.keyCode === 27 && !isCollapsed) { // ESC tuşu ile kapatmak için
             button.click();
         }
-    }
+    };
 
-    window.addEventListener("click", function(event) {
-        if (!node.contains(event.target) && !node.classList.contains("outdated-collapsed")) {
-            button.click();
-        }
-    });
-
-    document.addEventListener("focus", function(event) {
-        var isCollapsed = node.classList.contains("outdated-collapsed");
-        var containsTarget = node.contains(event.target);
-        if (!isCollapsed && !containsTarget) {
-            event.stopPropagation();
-            node.focus();
-        }
-    }, true); // use capture to enable event delegation as focus doesn't bubble up
 }
