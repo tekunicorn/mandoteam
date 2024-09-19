@@ -1,5 +1,5 @@
 
-    
+    if (document.location.hostname === "mandoradio.blogspot.com" && document.body.innerHTML.includes("[uyarı]")) {
     // HTML'deki başlık, açıklama ve link içeriklerini al
     var popupMessageHeader = document.querySelector('[data-popup-header]').innerHTML || "Uyarı Başlığı";
     var popupMessageWarning = document.querySelector('[data-popup-warning]').innerHTML || "Uyarı Mesajı";
