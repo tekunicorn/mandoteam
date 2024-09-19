@@ -1,5 +1,5 @@
 window.onload = function() {
-    if (document.location.hostname === "mandoradio.blogspot.com" && (document.body.textContent || document.body.innerText).includes("[uyarı]")) {
+    if (document.location.hostname === "mandoradio.blogspot.com") {
 
         // HTML'deki başlık, açıklama ve link içeriklerini al
         var popupMessageHeaderElement = document.querySelector('[data-popup-header]');
@@ -70,7 +70,7 @@ window.onload = function() {
         document.body.appendChild(node);
         button.focus();
 
-        // Klavye kısayolları - Esc ile kapatma
+        // Klavye Kısayolları - Esc ile kapatma
         window.onkeydown = function (event) {
             var isCollapsed = node.classList.contains("outdated-collapsed");
             if (event.key === "Escape" && !isCollapsed) { // "Esc" basıldığında kapat
