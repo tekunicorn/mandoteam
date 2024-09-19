@@ -1,0 +1,63 @@
+/** Outdated warning **********************************************************/
+
+.outdated-spec {
+    color: black;
+    color: var(--outdatedspec-text);
+    background-color: rgba(0,0,0,0.5);
+    background-color: var(--outdatedspec-bg);
+}
+
+.outdated-warning {
+    position: fixed;
+    bottom: 50%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 50%;
+    background: maroon;
+    background: var(--outdated-bg);
+    color: white;
+    color: var(--outdated-text);
+    border-radius: 1em;
+    box-shadow: 0 0 1em red;
+    box-shadow: 0 0 1em var(--outdated-shadow);
+    padding: 2em;
+    text-align: center;
+    z-index: 2;
+}
+
+.outdated-warning a {
+    color: currentcolor;
+    background: transparent;
+}
+
+.edited-rec-warning {
+    background: darkorange;
+    background: var(--editedrec-bg);
+    box-shadow: 0 0 1em;
+}
+
+.outdated-warning button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 0;
+    border: 0;
+    padding: 0.25em 0.5em;
+    background: transparent;
+    color: white;
+    color: var(--outdated-text);
+    font: 1em sans-serif;
+    text-align: center;
+}
+
+.outdated-warning span {
+    display: block;
+}
+
+.outdated-collapsed {
+    bottom: 0;
+    border-radius: 0;
+    width: 100%;
+    padding: 0;
+}
