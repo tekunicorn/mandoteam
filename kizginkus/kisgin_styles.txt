@@ -1,0 +1,105 @@
+ .popup{background:100% 100% / 50px no-repeat url("https://i.hizliresim.com/f7aa3bd.gif"),linear-gradient(150deg,#003f5b,#2b4b7d,#5f5195,#98509d,#23915a,#5365f2,#ff6f4e,#ff1313 100%);color:#fafafa;width:468px;border:2px solid #FEFFF0;border-radius:5px;display:none;position:fixed;left:50%;top:50%;transform:translate(-50%,-50%);padding:27px 44px 45px 19px;background-color:white;box-shadow:-11px 0px 15px 0px red,19px 0px 15px -6px mediumvioletred,0px 15px 15px 1px mediumblue,0px -12px 15px 0px mediumspringgreen;z-index:100}
+button#closePopup:hover{color:white;box-shadow:red 0px 0px 7px 4px}
+.popup.active{display:block}
+button#showPopup{background:0 0 / 50px 66px no-repeat url(https://i.hizliresim.com/18zo0kf.gif);border:none;width:56px;height:66px;filter:brightness(0.5);position:fixed;bottom:-1px;left:0px}
+button#showPopup:hover {filter: drop-shadow(2px 4px 6px black);background: 0 0 / 50px 66px no-repeat url(https://i.hizliresim.com/f7aa3bd.gif);}button#closePopup{background:repeating-linear-gradient(45deg,#dedcdc,#21a400 100px);border:thick;color:brown;position:fixed;top:10px;right:10px; border-radius: 8px;}
+p#baslik{color:powderblue;font-size:20px;border-bottom:double 6px;text-align:left;font-family:system-ui;font-weight:bold;position:relative;top:-25px;width:21.9em;text-stroke:0.1px indianred;filter:drop-shadow(2px 4px 6px black)}
+p#aciklama{text-align: left;font-family:serif;color:white;margin:-60px 0px 0px 1px;font-weight:bold}
+strong{background:midnightblue;font-size:0.8em;border-radius:5px;border:solid 1px;padding:0px 5px 1px 4px;margin:0 4px;color:tan;position:relative}
+strong:hover{color:white}footer{text-align:center}.footer-content{position:relative;z-index:1;pointer-events:none;font-family:"Arial";font-size:0.1em;top:46px;color:darkgoldenrod}.footer-content::after{content:"Design By Lc FaLCoN - Copyright © - MandoTeam.BLoGsPoT.CoM";position:absolute;left:50%;transform:translateX(-50%);white-space:nowrap;color:inherit;pointer-events:none}.tooltip{visibility:hidden;position:absolute;left:0;background:100% 100% / 567px no-repeat url("https://i.hizliresim.com/pfhmm1i.png");width:41.7em;height:15.7em;top:20px;z-index:15}strong:hover .tooltip{visibility:visible}
+.highlight{background-color:#ffff0026;border:2px solid red;padding:2px 5px;border-radius:5px;font-weight:bold;position:absolute;display:inline-block;color:transparent;user-select: none;}
+
+.angry_bird{visibility:hidden;width:113px;background-color:black;color:white;text-align:center;padding:5px;border-radius:11px 11px 11px 0px;position:absolute;bottom:19%;left:109%;transform:translateX(-50%);opacity:0;transition:opacity 0.3s;font-family:monospace;font-size:xx-small}
+.konus_bird{position:fixed;bottom:10px;right:25px;width:10px;height:10px}
+.konus_bird:hover + .angry_bird{visibility:visible;opacity:1}
+
+.highlight.esc{left:0%;top:13%;width:4%;height:9%}
+.highlight.f1{left:7%;top:13%;width:5%;height:9%}
+.highlight.f2{left:13%;top:13%;width:5%;height:9%}
+.highlight.f3{left:19%;top:13%;width:5%;height:9%}
+.highlight.f4{left:25%;top:13%;width:5%;height:9%}
+.highlight.f5{left:32%;top:13%;width:5%;height:9%}
+.highlight.f6{left:38%;top:13%;width:5%;height:9%}
+.highlight.f7{left:45%;top:13%;width:5%;height:9%}
+.highlight.f8{left:51%;top:13%;width:5%;height:9%}
+.highlight.f9{left:58%;top:13%;width:5%;height:9%}
+.highlight.f10{left:64%;top:13%;width:5%;height:9%}
+.highlight.f11{left:71%;top:13%;width:5%;height:9%}
+.highlight.f12{left:77%;top:13%;width:5%;height:9%}
+
+.highlight.one{left:6%;top:26%;width:4%;height:10%}
+.highlight.two{left:12%;top:26%;width:4%;height:10%}
+.highlight.three{left:18%;top:26%;width:4%;height:10%}
+.highlight.four{left:24%;top:26%;width:4%;height:10%}
+.highlight.five{left:29%;top:26%;width:4%;height:10%}
+.highlight.six{left:35%;top:26%;width:4%;height:10%}
+.highlight.seven{left:41%;top:26%;width:4%;height:10%}
+.highlight.eight{left:46%;top:26%;width:4%;height:10%}
+.highlight.nine{left:52%;top:26%;width:4%;height:10%}
+.highlight.zero{left:58%;top:26%;width:4%;height:10%}
+.highlight.minus{left:64%;top:26%;width:4%;height:10%}
+.highlight.equal{left:70%;top:26%;width:4%;height:10%}
+
+.highlight.q{left:10%;top:41%;width:4%;height:10%}
+.highlight.w{left:16%;top:41%;width:4%;height:10%}
+.highlight.e{left:21%;top:41%;width:3%;height:10%}
+.highlight.r{left:28%;top:41%;width:4%;height:10%}
+.highlight.t{left:32%;top:41%;width:4%;height:10%}
+.highlight.y{left:38%;top:40%;width:3%;height:11%}
+.highlight.u{left:44%;top:41%;width:4%;height:10%}
+.highlight.i{left:52%;top:41%;width:4%;height:10%}
+.highlight.o{left:55%;top:41%;width:4%;height:10%}
+.highlight.p{left:60%;top:41%;width:4%;height:10%}
+.highlight.a{left:11%;top:56%;width:4%;height:10%}
+.highlight.s{left:17%;top:56%;width:4%;height:10%}
+.highlight.d{left:22%;top:56%;width:4%;height:10%}
+.highlight.f{left:28%;top:56%;width:4%;height:10%}
+.highlight.g{left:35%;top:56%;width:4%;height:10%}
+.highlight.h{left:41%;top:56%;width:4%;height:10%}
+.highlight.j{left:45%;top:56%;width:4%;height:10%}
+.highlight.k{left:51%;top:56%;width:4%;height:10%}
+.highlight.l{left:56%;top:56%;width:4%;height:9%}
+.highlight.c{left:26%;top:71%;width:6%;height:10%}
+.highlight.v{left:32%;top:71%;width:6%;height:10%}
+.highlight.b{left:38%;top:71%;width:6%;height:10%}
+.highlight.n{left:44%;top:71%;width:6%;height:10%}
+.highlight.m{left:49%;top:71%;width:3%;height:10%}
+.highlight.i{left:68%;top:55%;width:5%;height:10%}
+
+.highlight.tilde{left:1%;top:26%;width:5%;height:10%}
+.highlight.tab{left:1%;top:41%;width:6%;height:10%}
+.highlight.backspace{left:83%;top:13%;width:16%;height:39%}
+.highlight.enter{left:73%;top:55%;width:8%;height:11%}
+.highlight.backslash{left:84%;top:56%;width:15%;height:10%}
+.highlight.caps{left:1%;top:56%;width:9%;height:10%}
+.highlight.virgul{left:77%;top:41%;width:5%;height:10%}
+.highlight.nokta{left:66%;top:71%;width:3%;height:10%}
+
+.highlight.left_win{left:8.4%;top:85.3%;width:5%;height:10%}
+.highlight.left_shift{left:1%;top:71%;width:8%;height:10%}
+.highlight.left_shift{left:0.6%;top:70%;width:7%;height:10%}
+.highlight.left_ctrl{left:0.7%;top:85.3%;width:5%;height:10%}
+.highlight.left_alt{left:16%;top:86%;width:4%;height:9%}
+.highlight.left_bracket{left:66%;top:41%;width:2%;height:9%}
+
+.highlight.space{left:23.3%;top:86%;width:36%;height:10%}
+
+.highlight.right_bracket{left:71%;top:41%;width:2%;height:6%}
+.highlight.right_alt{left:61%;top:86%;width:6%;height:10%}
+.highlight.right_ctrl{left:75%;top:85%;width:7%;height:12%}
+.highlight.right_win{left:68%;top:85%;width:5%;height:11%}
+.highlight.right_shift{left:72.3%;top:71%;width:9%;height:10%}
+
+.highlight.mando{left:83%;top:55%;width:14%;height:11%}
+
+.highlight.left_ok{left:83%;top:85%;width:3%;height:11%}
+.highlight.right_ok{left:94.4%;top:85%;width:3%;height:11%}
+.highlight.down_ok{left:88.8%;top:85%;width:3%;height:11%}
+.highlight.up_ok{left:89%;top:70%;width:2.8%;height:10%}
+
+@media only screen and (max-width:768px){.highlight{display:none}
+}
+@media (max-width:768px){.popup{width:90%;padding:20px;box-shadow:none}
+button#showPopup{width:50px;height:67px}
+p#baslik{font-size:16px;width:90%}
+button#closePopup{top:5px;right:5px}
