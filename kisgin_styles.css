@@ -107,3 +107,8 @@ button#closePopup{top:5px;right:5px}
 /* Mobilde gizle */
 @media (max-width: 768px){.tooltip .tooltiptext{display: none;}}
 
+@media (max-width: 768px) {
+    .tooltip {
+        visibility: hidden; /* veya display: none; */
+    }
+}
