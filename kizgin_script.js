@@ -11,26 +11,28 @@ document.getElementById('closePopup').addEventListener('click', function() {
 var strongs = document.querySelectorAll('strong');
 
 strongs.forEach(function(strong) {
-    if (window.innerWidth > 768) { // Sadece masaüstü için
-        strong.addEventListener('mouseenter', function() {
+    strong.addEventListener('mouseenter', function() {
+        if (window.innerWidth > 768) { // Sadece masaüstü için
             var tooltip = strong.querySelector('.tooltip');
             tooltip.style.visibility = 'visible'; // Tooltip'i göster
-        });
-
-        strong.addEventListener('mouseleave', function() {
-            var tooltip = strong.querySelector('.tooltip');
-            tooltip.style.visibility = 'hidden'; // Tooltip'i gizle
-        });
-    }
-
-    // Mobil için touch olayları eklemeden önce kontrol et
-    strong.addEventListener('touchstart', function(event) {
-        if (window.innerWidth <= 768) {
-            event.preventDefault(); // Varsayılan davranışı engelle
         }
     });
 
-    strong.addEventListener('touchend', function(event) {
+    strong.addEventListener('mouseleave', function() {
+        if (window.innerWidth > 768) { // Sadece masaüstü için
+            var tooltip = strong.querySelector('.tooltip');
+            tooltip.style.visibility = 'hidden'; // Tooltip'i gizle
+        }
+    });
+
+    strong.addEventListener('touchstart', function() {
+        if (window.innerWidth <= 768) {
+            var tooltip = strong.querySelector('.tooltip');
+            tooltip.style.visibility = 'visible'; // Tooltip'i göster
+        }
+    });
+
+    strong.addEventListener('touchend', function() {
         if (window.innerWidth <= 768) {
             var tooltip = strong.querySelector('.tooltip');
             tooltip.style.visibility = 'hidden'; // Tooltip'i gizle
