@@ -12,6 +12,9 @@ strong#kyb:hover{color:white}footer{text-align:center}.footer-content{position:r
 .angry_bird{visibility:hidden;width:113px;background-color:black;color:white;text-align:center;padding:5px;border-radius:11px 11px 11px 0px;position:absolute;bottom:19%;left:109%;transform:translateX(-50%);opacity:0;transition:opacity 0.3s;font-family:monospace;font-size:xx-small}
 .konus_bird{position:fixed;bottom:10px;right:25px;width:10px;height:10px}
 .konus_bird:hover + .angry_bird{visibility:visible;opacity:1}
+button#showPopup{width:50px;height:67px}
+p#baslik{font-size:16px;width:90%}
+button#closePopup{top:5px;right:5px}
 
 .highlight.esc{left:0%;top:13%;width:4%;height:9%}
 .highlight.f1{left:7%;top:13%;width:5%;height:9%}
@@ -99,15 +102,7 @@ strong#kyb:hover{color:white}footer{text-align:center}.footer-content{position:r
 .highlight.down_ok{left:88.8%;top:85%;width:3%;height:11%}
 .highlight.up_ok{left:89%;top:70%;width:2.8%;height:10%}
 
-@media only screen and (max-width:768px){.highlight{display:none}
-}
+@media only screen and (max-width:768px){.highlight{display:none}}
 @media (max-width:768px){.popup{width:90%;padding:20px;box-shadow:none}
-button#showPopup{width:50px;height:67px}
-p#baslik{font-size:16px;width:90%}
-button#closePopup{top:5px;right:5px}
 /* Mobilde gizle */
-@media (max-width: 768px) {
-    .tooltip .tooltiptext {
-        display: none;
-    }
-}
+@media (max-width: 768px){.tooltip .tooltiptext{display: none;}}
