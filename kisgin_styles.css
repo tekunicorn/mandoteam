@@ -106,3 +106,8 @@ button#closePopup{top:5px;right:5px}
 @media only screen and (max-width:768px){.highlight{display:none}}
 @media (max-width:768px){.popup{width:70%;padding:20px;box-shadow:none}
 
+@media (max-width: 768px) {
+    .tooltip {
+        visibility: hidden;
+    }
+}
