@@ -118,9 +118,6 @@ button#closePopup{top:5px;right:5px}
 .highlight.down_ok{left:88.8%;top:85%;width:3%;height:11%}
 .highlight.up_ok{left:89%;top:70%;width:2.8%;height:10%}
 
-strong#kyb:hover .tooltip {
-    visibility: visible;
-}
 
 /* Mobilde gizle */
 @media (max-width: 768px) {
