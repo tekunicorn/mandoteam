@@ -13,7 +13,7 @@ strong#kyb:hover{color:white}footer{text-align:center}.footer-content{position:r
     position: absolute;
     left: 0;
     background: 100% 100% / 567px no-repeat url("https://i.hizliresim.com/pfhmm1i.png");
-    width: 90%; /* Mobilde %90 genişlik */
+    width: 50%; /* Mobilde %90 genişlik */
     max-width: 58.8em; /* Maksimum genişlik */
     height: auto; /* Yükseklik otomatik */
     padding: 10px; /* İçerik için biraz padding ekle */
