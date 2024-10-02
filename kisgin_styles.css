@@ -105,3 +105,9 @@ strong#kyb:hover{color:white}footer{text-align:center}.footer-content{position:r
 button#showPopup{width:50px;height:67px}
 p#baslik{font-size:16px;width:90%}
 button#closePopup{top:5px;right:5px}
+/* Mobilde gizle */
+@media (max-width: 768px) {
+    .tooltip .tooltiptext {
+        display: none;
+    }
+}
