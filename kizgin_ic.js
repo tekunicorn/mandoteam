@@ -149,8 +149,7 @@ quotes[17] = "<p id='baslik' title='Windows kısayolı 18'>Dosya Yöneticisine A
     "<strong id='kyb'>Alt + Tab<span class='tooltip'><span class='highlight left_alt'>Alt</span><span class='highlight tab'>Tab</span></span></strong> Açık uygulamalar arasında geçiş yap.<br />" +
     "<strong id='kyb'>Alt + F4<span class='tooltip'><span class='highlight left_alt'>Alt</span><span class='highlight f4'>F4</span></span></strong> Etkin öğeyi kapat veya etkin uygulamadan çık.<br />" +
     "<strong id='kyb'>Alt + Enter<span class='tooltip'><span class='highlight left_alt'>Alt</span><span class='highlight enter'>Enter</span></span></span></strong> Seçili öğenin özelliklerini görüntüle.<br />" +
-    "<strong id='kyb'>Alt + Esc<span class='tooltip'><span class='highlight left_alt'>Alt</span><span class='highlight esc'>Esc</span></span></strong> Öğeler arasında açıldıkları sırayla dolaş.<br />" +
-    "<strong id='kyb'>Win + 1<span class='tooltip'><span class='highlight right_win'>Win</span><span class='highlight one'>1</span></span></strong> Oturum açma alanında parolanızı görünür yapar.</p>";
+    "<strong id='kyb'>Alt + Esc<span class='tooltip'><span class='highlight left_alt'>Alt</span><span class='highlight esc'>Esc</span></span></strong> Öğeler arasında açıldıkları sırayla dolaş.</p>";
 
 
 quotes[18] = "<p id='baslik' title='Windows kısayolı 19'>Sağ Tıklama</p><br><p id='aciklama'>Seçili nesne için sağ tıklama ile aynısı.<br><strong id='kyb' title='Shift + F10'>Shift + F10<span class='tooltip'><span class='highlight left_shift'>Shift</span><span class='highlight f10'>F10</span></span></strong></p>";
