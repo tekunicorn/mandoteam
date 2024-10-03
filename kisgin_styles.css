@@ -102,7 +102,62 @@ button#closePopup{top:5px;right:5px}
 .highlight.down_ok{left:88.8%;top:85%;width:3%;height:11%}
 .highlight.up_ok{left:89%;top:70%;width:2.8%;height:10%}
 
-@media only screen and (max-width:768px){.tooltip .tooltiptext{display:none}}
+/*@media only screen and (max-width:768px){.tooltip .tooltiptext{display:none}}
 @media only screen and (max-width:768px){.highlight{display:none}}
-@media (max-width:768px){.popup{width:70%;padding:20px;box-shadow:none}}
+@media (max-width:768px){.popup{width:70%;padding:20px;box-shadow:none}}*/
 
+
+@media (max-width: 768px) {
+    .popup {
+        width: 90%;
+        padding: 20px;
+        box-shadow: none;
+    }
+
+    .tooltip {
+        width: 80%; /* Tooltip genişliğini sayfa içine sığacak şekilde ayarladım */
+        max-width: 300px; /* Mobilde aşırı büyük olmaması için maksimum genişlik ayarı */
+        height: auto;
+        padding: 10px;
+        box-shadow: none;
+        background: 100% 100% / cover no-repeat url("https://i.hizliresim.com/pfhmm1i.png");
+        border: solid 3px darkslategrey;
+        border-radius: 5px;
+        z-index: 15;
+        position: absolute;
+        left: 10%; /* Sayfadan taşmaması için soldan boşluk bıraktım */
+        right: 10%; /* Sağ tarafta da taşmayı önlemek için ayar */
+        top: 20px;
+    }
+
+    .highlight {
+        width: auto;
+        padding: 3px;
+        background-color: #ffff003b;
+        font-weight: normal;
+        border-radius: 3px;
+        border: 1px solid red;
+        transform: scale(0.6);
+    }
+
+    button#showPopup {
+        width: 45px;
+        height: 60px;
+    }
+
+    p#baslik {
+        font-size: 14px;
+        width: 85%;
+    }
+
+    button#closePopup {
+        top: 5px;
+        right: 5px;
+    }
+
+    footer {
+        text-align: center;
+        position: relative;
+        bottom: 42px;
+    }
+}
