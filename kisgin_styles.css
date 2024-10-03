@@ -1,4 +1,4 @@
- .popup{background:100% 100% / 50px no-repeat url("https://i.hizliresim.com/f7aa3bd.gif"),linear-gradient(150deg,#003f5b,#2b4b7d,#5f5195,#98509d,#23915a,#5365f2,#ff6f4e,#ff1313 100%);color:#fafafa;width:468px;border:2px solid #FEFFF0;border-radius:5px;display:none;position:fixed;left:50%;top:40%;transform:translate(-50%,-50%);padding:27px 44px 45px 19px;background-color:white;box-shadow:-11px 0px 15px 0px red,19px 0px 15px -6px mediumvioletred,0px 15px 15px 1px mediumblue,0px -12px 15px 0px mediumspringgreen;z-index:100}
+ .popup{background:100% 100% / 50px no-repeat url("https://i.hizliresim.com/f7aa3bd.gif"),linear-gradient(150deg,#003f5b,#2b4b7d,#5f5195,#98509d,#23915a,#5365f2,#ff6f4e,#ff1313 100%);color:#fafafa;width:468px;border:2px solid #FEFFF0;border-radius:5px;display:none;position:fixed;left:50%;top:50%;transform:translate(-50%,-50%);padding:27px 44px 45px 19px;background-color:white;box-shadow:-11px 0px 15px 0px red,19px 0px 15px -6px mediumvioletred,0px 15px 15px 1px mediumblue,0px -12px 15px 0px mediumspringgreen;z-index:100}
 button#closePopup:hover{color:white;box-shadow:red 0px 0px 7px 4px}
 .popup.active{display:block}
 button#showPopup{background:0 0 / 50px 66px no-repeat url(https://i.hizliresim.com/18zo0kf.gif);border:none;width:56px;height:66px;filter:brightness(0.5);position:fixed;bottom:-1px;left:0px}
@@ -119,6 +119,7 @@ button#closePopup{top:5px;right:5px}
 @media (max-width: 768px) {
     .popup {
         width: 90%;
+        top: 40%;
         padding: 20px;
         box-shadow: none;
     }
