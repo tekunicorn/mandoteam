@@ -115,9 +115,9 @@ button#closePopup{top:5px;right:5px}
     }
 
     .tooltip {
-        width: 80%; /* Tooltip genişliğini sayfa içine sığacak şekilde ayarladım */
-        max-width: 300px; /* Mobilde aşırı büyük olmaması için maksimum genişlik ayarı */
-        height: auto;
+        width: 30.5em;
+        max-width: 300px;
+        height: 10em;
         padding: 10px;
         box-shadow: none;
         background: 100% 100% / cover no-repeat url("https://i.hizliresim.com/pfhmm1i.png");
@@ -125,19 +125,19 @@ button#closePopup{top:5px;right:5px}
         border-radius: 5px;
         z-index: 15;
         position: absolute;
-        left: 10%; /* Sayfadan taşmaması için soldan boşluk bıraktım */
-        right: 10%; /* Sağ tarafta da taşmayı önlemek için ayar */
+        left: 10%;
+        right: 10%;
         top: 20px;
     }
 
-    .highlight {
-        width: auto;
-        padding: 3px;
-        background-color: #ffff003b;
-        font-weight: normal;
-        border-radius: 3px;
-        border: 1px solid red;
-        transform: scale(0.6);
+   .highlight {
+       width: auto;
+       padding: 1px;
+       background-color: #ffff003b;
+       font-weight: normal;
+       border-radius: 1px;
+       border: 1px solid red;
+       transform: scale(1);
     }
 
     button#showPopup {
