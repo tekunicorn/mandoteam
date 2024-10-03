@@ -1,6 +1,6 @@
    var quotes = new Array();
 quotes[0] = "<p id='baslik' title='Windows kısayolı 1'>Bir sekmeyi yanlışlıkla mı kapattınız?</p><br><p id='aciklama'>En son kapatılan sekmeyi yeniden açmak ve yaptığınız şeye geri dönmek için kısayol tuşları.<br>" +
-    "<strong>Ctrl + Shift + T" +
+    "<strong id='kyb'>Ctrl + Shift + T" +
     "<span class='tooltip'>" +
     "<span class='highlight left_ctrl'>Ctrl</span>" +
     "<span class='highlight left_shift'>Shift</span>" +
