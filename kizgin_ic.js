@@ -155,8 +155,6 @@ quotes[17] = "<p id='baslik' title='Windows kısayolı 18'>Dosya Yöneticisine A
 quotes[18] = "<p id='baslik' title='Windows kısayolı 19'>Sağ Tıklama</p><br><p id='aciklama'>Seçili nesne için sağ tıklama ile aynısı.<br><strong id='kyb' title='Shift + F10'>Shift + F10<span class='tooltip'><span class='highlight left_shift'>Shift</span><span class='highlight f10'>F10</span></span></strong></p>";
 
 
-  // sayfa her yenilendiğinde tek açıklama gösterir eğer yorumu silerve en altaki document.write(quotes.join("")); silersen
-  //  var rand1 = Math.floor(Math.random() * quotes.length);
-  //  var quote = quotes[rand1];
-  //  document.write(quote);
-document.write(quotes.join(""));
+   var rand1 = Math.floor(Math.random() * quotes.length);
+   var quote = quotes[rand1];
+   document.write(quote);
